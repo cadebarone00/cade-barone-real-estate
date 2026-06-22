@@ -107,6 +107,21 @@ export default function AboutPage() {
           <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-start">
             <div className="min-[900px]:order-2">
               <UmhbPhotoStack />
+
+              <h3 className="font-display italic font-medium text-2xl text-gold mt-8 mb-4">
+                My Career at UMHB
+              </h3>
+              <ul className="grid grid-cols-1 gap-y-2.5 m-0 p-0 list-none">
+                {UMHB_ACHIEVEMENTS.map((item) => (
+                  <li
+                    key={item}
+                    className="flex gap-2.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.04em] text-pale-blue"
+                  >
+                    <span className="text-gold">—</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
             <div className="min-[900px]:order-1">
               <SectionTitle
@@ -141,21 +156,6 @@ export default function AboutPage() {
                 Belton, TX as a collegiate golfer, and I&apos;m excited to
                 resume my real estate career now that my NCAA career is over.
               </p>
-
-              <h3 className="font-display italic font-medium text-2xl text-gold mt-9 mb-4">
-                My Career at UMHB
-              </h3>
-              <ul className="grid grid-cols-1 min-[480px]:grid-cols-2 gap-x-8 gap-y-2.5 m-0 p-0 list-none">
-                {UMHB_ACHIEVEMENTS.map((item) => (
-                  <li
-                    key={item}
-                    className="flex gap-2.5 text-xs sm:text-sm font-semibold uppercase tracking-[0.04em] text-pale-blue"
-                  >
-                    <span className="text-gold">—</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
             </div>
           </div>
         </section>
