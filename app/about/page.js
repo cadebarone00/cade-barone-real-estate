@@ -17,7 +17,7 @@ const UMHB_ACHIEVEMENTS = [
   "Master's Degree in Sports Administration",
   "Individual & Team ASC Conference Champion",
   "6 Total Team Wins",
-  "National Championship Berth, Placed 11th as a Team",
+  "National Championship Birth, Placed 11th as a Team",
   "18th on Clipped Scoreboard",
   "Earned World Amateur Golf Ranking",
 ];
