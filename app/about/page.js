@@ -33,7 +33,7 @@ export default function AboutPage() {
 
         {/* OVERVIEW */}
         <section className="bg-cream-deep">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-center">
+          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-start">
             <FramedPhoto label="Drop a photo of you" aspectClassName="aspect-[4/5]" />
             <div>
               <SectionTitle
@@ -53,7 +53,7 @@ export default function AboutPage() {
 
         {/* TEXAS A&M */}
         <section className="bg-white">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-center">
+          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-start">
             <div className="min-[900px]:order-2">
               <FramedPhoto label="Drop a Texas A&M photo" aspectClassName="aspect-[4/5]" />
             </div>
@@ -75,7 +75,7 @@ export default function AboutPage() {
 
         {/* REAL ESTATE */}
         <section className="bg-cream-deep">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-center">
+          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-start">
             <FramedPhoto label="Drop a real estate photo" aspectClassName="aspect-[4/5]" />
             <div>
               <SectionTitle
@@ -95,7 +95,7 @@ export default function AboutPage() {
 
         {/* UMHB GOLF */}
         <section className="bg-navy">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-center">
+          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-start">
             <div className="min-[900px]:order-2">
               <UmhbPhotoStack />
             </div>
