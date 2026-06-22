@@ -3,11 +3,10 @@
 import { useEffect, useState } from "react";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
 
-const REELS = [
-  { tag: "DALLAS CONDOS", title: "Uptown + Victory Park", sub: "$550K budget · 378 likes" },
-  { tag: "INSIDE A 1-BED", title: "Bishop Arts tour", sub: "Listed for $619K · 207 likes" },
-  { tag: "FIRST-TIME BUYER", title: "Lakewood walkthrough", sub: "Closing day · 294 likes" },
-];
+// TODO: swap back to the reel-card grid once 3-5 real reels are posted.
+// Each entry needs a real caption and real view/like counts pulled from
+// the actual post — do not fill this with placeholder or invented stats.
+const REELS = [];
 
 export default function BuyersReels() {
   const [reel, setReel] = useState(null);
@@ -22,6 +21,8 @@ export default function BuyersReels() {
   }, [reel]);
 
   const active = reel === null ? null : REELS[reel];
+
+  if (REELS.length === 0) return null;
 
   return (
     <>

@@ -1,7 +1,6 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
-import BuyersReels from "@/components/BuyersReels";
 import { OpenContactButton } from "@/components/OpenContactButton";
 
 export const metadata = {
@@ -33,38 +32,12 @@ const STEPS = [
   },
 ];
 
-const TESTIMONIALS = [
-  {
-    quote:
-      "As a first-time homebuyer, I had a lot of questions, and Cade was endlessly patient — I felt confident and informed every step of the way. He made what could have been a stressful process feel seamless and genuinely fun.",
-    author: "Alexandra Perpick",
-  },
-  {
-    quote:
-      "Cade was incredible from start to finish. Attentive to our exact criteria and patient over more than a year of searching. He guided us through the ups and downs, gave honest advice, and never once pressured us.",
-    author: "Lucas Laracy",
-  },
-  {
-    quote:
-      "Cade helped me find my dream condo! As a first-time buyer it was incredible to have someone with such a strong grasp of the Dallas market. Kind, patient, responsive — plus great intros to a mortgage broker and lawyer.",
-    author: "Natasha Pilato",
-  },
-  {
-    quote:
-      "Unfailingly personable and warm, but also sharp and professional on the business end. A great negotiator who balances assertiveness and friendliness, with strong relationships across the industry.",
-    author: "Daniel Ferreira",
-  },
-  {
-    quote:
-      "Cade was amazing!! He took so much time with me and was extremely patient during our condo search. Very on top of everything and knowledgeable — I ended up in my dream condo, under budget. Highly recommend.",
-    author: "Priya Sharma",
-  },
-  {
-    quote:
-      "I met Cade after briefly working with two other agents, and was immediately impressed by his preparedness and knowledge of the area I wanted. As a first-time buyer, his advice was incredibly helpful and reassuring.",
-    author: "Marcus Chen",
-  },
-];
+// TODO: insert real testimonial — name + quote pending from client.
+const TESTIMONIAL = {
+  name: "",
+  quote: "",
+  rating: 5,
+};
 
 export default function BuyersPage() {
   return (
@@ -138,45 +111,55 @@ export default function BuyersPage() {
           </div>
         </section>
 
-        {/* BEHIND THE SCENES */}
+        {/* FOLLOW THE PROCESS */}
+        {/* TODO: swap back to the reel-card grid (components/BuyersReels.jsx)
+            once 3-5 real reels are posted, using real captions and real
+            view/like counts pulled from the actual posts. */}
         <section className="bg-cream-deep">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)]">
-            <div className="text-center mb-[54px]">
-              <h2 className="m-0 mb-3.5 font-display font-medium text-[clamp(34px,4.4vw,56px)] leading-[1.05] text-ink">
-                BEHIND <em className="italic">the</em> SCENES
-              </h2>
-              <p className="m-0 mx-auto max-w-[620px] text-lg leading-[1.6] text-grey-text">
-                Featured short videos on home tours, market insights, and
-                behind the scenes with my clients.
-              </p>
+          <div className="max-w-[640px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] text-center">
+            <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-4">
+              FOLLOW THE PROCESS
             </div>
-
-            <BuyersReels />
+            <h2 className="m-0 mb-5 font-display font-medium text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
+              Documenting the search, one home at a time.
+            </h2>
+            <p className="m-0 mb-9 text-lg leading-[1.7] text-grey-text">
+              I&apos;m building out video walkthroughs, market breakdowns, and
+              behind-the-scenes content as I work with buyers across North
+              Dallas and Collin County. Follow along on Instagram and TikTok
+              — first ones dropping soon.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm font-bold tracking-[0.05em]">
+              <a href="#" className="text-navy no-underline hover:text-gold">
+                Follow on Instagram →
+              </a>
+              <a href="#" className="text-navy no-underline hover:text-gold">
+                Follow on TikTok →
+              </a>
+            </div>
           </div>
         </section>
 
-        {/* SUCCESS STORIES */}
+        {/* WHAT CLIENTS SAY */}
         <section className="bg-white">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)]">
-            <div className="text-center mb-[54px]">
-              <h2 className="m-0 mb-3.5 font-display font-medium text-[clamp(34px,4.4vw,56px)] leading-[1.05] text-ink">
-                SUCCESS <em className="italic">Stories</em>
-              </h2>
-              <p className="m-0 mx-auto max-w-[640px] text-lg leading-[1.6] text-grey-text">
-                Here&apos;s what it&apos;s like to work together — from
-                clients who&apos;ve been in your shoes.
-              </p>
-            </div>
+          <div className="max-w-[640px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(56px,7vw,96px)] text-center">
+            <h2 className="m-0 mb-8 font-display font-medium text-[clamp(26px,3vw,36px)] leading-[1.1] text-ink">
+              WHAT CLIENTS <em className="italic">Say</em>
+            </h2>
 
-            <div className="grid grid-cols-1 min-[640px]:grid-cols-2 min-[900px]:grid-cols-3 gap-[clamp(18px,2.4vw,30px)]">
-              {TESTIMONIALS.map((t) => (
-                <div key={t.author} className="bg-cream-deep rounded-xl px-8 py-[34px]">
-                  <div className="text-gold text-base tracking-[2px] mb-[18px]">★★★★★</div>
-                  <p className="m-0 mb-6 text-base leading-[1.75] text-card-text">{t.quote}</p>
-                  <div className="font-bold text-navy text-[15px]">— {t.author}</div>
+            {TESTIMONIAL.name && TESTIMONIAL.quote ? (
+              <>
+                <div className="text-gold text-base tracking-[2px] mb-5">
+                  {"★".repeat(TESTIMONIAL.rating)}
                 </div>
-              ))}
-            </div>
+                <p className="m-0 mb-5 font-display italic text-xl leading-[1.7] text-card-text">
+                  &ldquo;{TESTIMONIAL.quote}&rdquo;
+                </p>
+                <div className="font-bold text-navy text-[15px]">— {TESTIMONIAL.name}</div>
+              </>
+            ) : (
+              <p className="m-0 text-base text-grey-text">Testimonials coming soon.</p>
+            )}
           </div>
         </section>
 

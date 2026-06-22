@@ -101,7 +101,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-pale-blue/[0.14]">
         <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[22px] flex justify-between flex-wrap gap-3 text-[13px] text-footer-copy">
-          <span>© 2026 Cade Barone. Realtor, Dallas, TX.</span>
+          <span>© 2026 Cade Barone. Real Estate Professional, Dallas, TX.</span>
           <span>Not intended to solicit clients currently under contract.</span>
         </div>
       </div>
