@@ -2,6 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FramedPhoto from "@/components/FramedPhoto";
 import UmhbPhotoStack from "@/components/UmhbPhotoStack";
+import SectionTitle from "@/components/SectionTitle";
 
 export const metadata = {
   title: "About",
@@ -35,12 +36,14 @@ export default function AboutPage() {
           <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-center">
             <FramedPhoto label="Drop a photo of you" aspectClassName="aspect-[4/5]" />
             <div>
-              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-4">
-                THE OVERVIEW
-              </div>
-              <h2 className="m-0 mb-5 font-display font-medium text-[clamp(32px,4vw,48px)] leading-[1.08] text-ink">
-                WHERE IT <em className="italic">all</em> STARTED
-              </h2>
+              <SectionTitle
+                title={
+                  <>
+                    WHERE IT <em className="italic">all</em> STARTED
+                  </>
+                }
+                subtitle="ADD A SHORT TAGLINE HERE"
+              />
               <p className="m-0 text-lg leading-[1.75] text-grey-text">
                 {PLACEHOLDER_COPY}
               </p>
@@ -55,12 +58,14 @@ export default function AboutPage() {
               <FramedPhoto label="Drop a Texas A&M photo" aspectClassName="aspect-[4/5]" />
             </div>
             <div className="min-[900px]:order-1">
-              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-4">
-                TEXAS A&amp;M
-              </div>
-              <h2 className="m-0 mb-5 font-display font-medium text-[clamp(32px,4vw,48px)] leading-[1.08] text-ink">
-                GIG <em className="italic">&apos;em</em>
-              </h2>
+              <SectionTitle
+                title={
+                  <>
+                    GIG <em className="italic">&apos;em</em>
+                  </>
+                }
+                subtitle="ADD A SHORT TAGLINE HERE"
+              />
               <p className="m-0 text-lg leading-[1.75] text-grey-text">
                 {PLACEHOLDER_COPY}
               </p>
@@ -73,12 +78,14 @@ export default function AboutPage() {
           <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)] grid grid-cols-1 min-[900px]:grid-cols-2 gap-[clamp(40px,6vw,88px)] items-center">
             <FramedPhoto label="Drop a real estate photo" aspectClassName="aspect-[4/5]" />
             <div>
-              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-4">
-                REAL ESTATE
-              </div>
-              <h2 className="m-0 mb-5 font-display font-medium text-[clamp(32px,4vw,48px)] leading-[1.08] text-ink">
-                FINDING <em className="italic">my</em> CALLING
-              </h2>
+              <SectionTitle
+                title={
+                  <>
+                    FINDING <em className="italic">my</em> CALLING
+                  </>
+                }
+                subtitle="ADD A SHORT TAGLINE HERE"
+              />
               <p className="m-0 text-lg leading-[1.75] text-grey-text">
                 {PLACEHOLDER_COPY}
               </p>
@@ -93,12 +100,16 @@ export default function AboutPage() {
               <UmhbPhotoStack />
             </div>
             <div className="min-[900px]:order-1">
-              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-4">
-                UMHB GOLF
-              </div>
-              <h2 className="m-0 mb-5 font-display font-medium text-[clamp(32px,4vw,48px)] leading-[1.08] text-cream">
-                2026 ASC <em className="italic">Champions</em>
-              </h2>
+              <SectionTitle
+                dark
+                title={
+                  <>
+                    <span className="font-bold not-italic">UMHB</span>{" "}
+                    <span className="italic font-medium">Golf</span>
+                  </>
+                }
+                subtitle="LIFE OUTSIDE OF REAL ESTATE"
+              />
               <p className="m-0 text-lg leading-[1.75] text-pale-blue">
                 {PLACEHOLDER_COPY}
               </p>
