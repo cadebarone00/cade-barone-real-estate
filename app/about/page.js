@@ -28,12 +28,12 @@ export default function AboutPage() {
       <main>
         {/* HERO */}
         <section className="bg-navy">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(56px,7vw,96px)] text-center">
+          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(28px,3.5vw,44px)] text-center">
             <FadeUp>
-              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[18px]">
+              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · ABOUT
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(40px,5.4vw,68px)] leading-[1.04] text-cream">
+              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
                 ABOUT <em className="italic">Cade</em>
               </h1>
             </FadeUp>
