@@ -7,7 +7,7 @@ import FadeUp from "@/components/FadeUp";
 import { StaggerGroup, StaggerItem } from "@/components/StaggerGroup";
 
 export const metadata = {
-  title: "Buyers",
+  title: "Home",
   description:
     "From our first conversation to the moment you get the keys, Cade Barone makes buying a home in Dallas smooth, strategic, and stress-free.",
 };
