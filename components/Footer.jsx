@@ -31,27 +31,24 @@ export default function Footer() {
             EXPLORE
           </div>
           <div className="flex flex-col gap-3 text-[15px]">
+            <Link href="/" className="text-footer-text no-underline hover:text-cream">
+              Home
+            </Link>
             <Link href="/about" className="text-footer-text no-underline hover:text-cream">
               About
             </Link>
-            <Link href="/" className="text-footer-text no-underline hover:text-cream">
-              Buyers
+            <Link href="/services" className="text-footer-text no-underline hover:text-cream">
+              Services
             </Link>
-            <Link href="/sellers" className="text-footer-text no-underline hover:text-cream">
-              Sellers
+            <Link href="/journal" className="text-footer-text no-underline hover:text-cream">
+              Journal
             </Link>
-            <Link href="/renters" className="text-footer-text no-underline hover:text-cream">
-              Renters
-            </Link>
-            <Link href="/landlords" className="text-footer-text no-underline hover:text-cream">
-              Landlords
-            </Link>
-            <Link
-              href="/property-management"
-              className="text-footer-text no-underline hover:text-cream"
+            <button
+              onClick={open}
+              className="text-left text-footer-text bg-transparent border-0 p-0 cursor-pointer hover:text-cream"
             >
-              Property Management
-            </Link>
+              Contact
+            </button>
           </div>
         </div>
 

@@ -5,12 +5,10 @@ import { usePathname } from "next/navigation";
 import { useContactModal } from "@/components/ContactModal";
 
 const LINKS = [
+  { href: "/", label: "HOME" },
   { href: "/about", label: "ABOUT" },
-  { href: "/", label: "BUYERS" },
-  { href: "/sellers", label: "SELLERS" },
-  { href: "/renters", label: "RENTERS" },
-  { href: "/landlords", label: "LANDLORDS" },
-  { href: "/property-management", label: "PROPERTY MANAGEMENT" },
+  { href: "/services", label: "SERVICES" },
+  { href: "/journal", label: "JOURNAL" },
 ];
 
 export default function Nav() {
@@ -48,9 +46,9 @@ export default function Nav() {
 
         <button
           onClick={open}
-          className="font-bold text-sm tracking-[0.05em] text-ink bg-gold rounded-[6px] px-6 py-3 cursor-pointer transition-colors duration-150 hover:bg-gold-hover whitespace-nowrap"
+          className="relative text-sm font-semibold tracking-[0.14em] text-grey-text bg-transparent border-0 p-0 cursor-pointer whitespace-nowrap py-1 hover:text-ink"
         >
-          Let&apos;s Talk
+          CONTACT
         </button>
       </div>
     </header>
