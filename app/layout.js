@@ -1,10 +1,10 @@
-import { Source_Serif_4, Mulish } from "next/font/google";
+import { Playfair_Display, Mulish } from "next/font/google";
 import "./globals.css";
 
-const sourceSerif = Source_Serif_4({
-  variable: "--font-source-serif",
+const playfairDisplay = Playfair_Display({
+  variable: "--font-playfair-display",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  weight: ["400", "500", "600", "700", "800"],
   style: ["normal", "italic"],
 });
 
@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${sourceSerif.variable} ${mulish.variable}`}>
+    <html lang="en" className={`${playfairDisplay.variable} ${mulish.variable}`}>
       <body className="bg-cream text-ink font-body">{children}</body>
     </html>
   );
