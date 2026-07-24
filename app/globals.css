@@ -19,7 +19,7 @@
   --color-footer-muted: #9DA9BC;
   --color-footer-copy: #7E8BA0;
 
-  --font-display: var(--font-playfair-display), Georgia, serif;
+  --font-display: var(--font-cormorant-garamond), Georgia, serif;
   --font-body: var(--font-mulish), -apple-system, "Segoe UI", sans-serif;
 }
 

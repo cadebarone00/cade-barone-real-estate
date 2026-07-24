@@ -1,10 +1,10 @@
-import { Playfair_Display, Mulish } from "next/font/google";
+import { Cormorant_Garamond, Mulish } from "next/font/google";
 import "./globals.css";
 
-const playfairDisplay = Playfair_Display({
-  variable: "--font-playfair-display",
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-cormorant-garamond",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
@@ -25,7 +25,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${playfairDisplay.variable} ${mulish.variable}`}>
+    <html lang="en" className={`${cormorantGaramond.variable} ${mulish.variable}`}>
       <body className="bg-cream text-ink font-body">{children}</body>
     </html>
   );
