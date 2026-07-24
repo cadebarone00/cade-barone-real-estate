@@ -99,12 +99,12 @@ export default function HomePage() {
         <section className="bg-white">
           <div className="max-w-[760px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)]">
             <FadeUp>
-              <h2 className="m-0 mb-7 font-display font-medium text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
+              <h2 className="m-0 mb-4 min-[900px]:mb-7 font-display font-medium text-xl min-[900px]:text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
                 Why should you hire me
               </h2>
-              <div className="flex flex-col gap-4 mb-16">
+              <div className="flex flex-col gap-2.5 min-[900px]:gap-4 mb-10 min-[900px]:mb-16">
                 {REASONS_TO.map((reason, i) => (
-                  <p key={i} className="m-0 text-lg leading-[1.7] text-grey-text">
+                  <p key={i} className="m-0 text-sm min-[900px]:text-lg leading-[1.55] min-[900px]:leading-[1.7] text-grey-text">
                     {reason}
                   </p>
                 ))}
@@ -112,12 +112,12 @@ export default function HomePage() {
             </FadeUp>
 
             <FadeUp>
-              <h2 className="m-0 mb-7 font-display font-medium text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
+              <h2 className="m-0 mb-4 min-[900px]:mb-7 font-display font-medium text-xl min-[900px]:text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
                 Why you should NOT hire me
               </h2>
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-2.5 min-[900px]:gap-4">
                 {REASONS_NOT_TO.map((reason, i) => (
-                  <p key={i} className="m-0 text-lg leading-[1.7] text-grey-text">
+                  <p key={i} className="m-0 text-sm min-[900px]:text-lg leading-[1.55] min-[900px]:leading-[1.7] text-grey-text">
                     {reason}
                   </p>
                 ))}
