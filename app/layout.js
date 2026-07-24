@@ -1,6 +1,5 @@
 import { Source_Serif_4, Mulish } from "next/font/google";
 import "./globals.css";
-import { ContactModalProvider } from "@/components/ContactModal";
 
 const sourceSerif = Source_Serif_4({
   variable: "--font-source-serif",
@@ -27,9 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${sourceSerif.variable} ${mulish.variable}`}>
-      <body className="bg-cream text-ink font-body">
-        <ContactModalProvider>{children}</ContactModalProvider>
-      </body>
+      <body className="bg-cream text-ink font-body">{children}</body>
     </html>
   );
 }
