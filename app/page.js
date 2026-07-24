@@ -34,21 +34,24 @@ export default function HomePage() {
       <main>
         {/* HERO */}
         <section className="relative bg-navy overflow-hidden">
-          <div className="relative w-full aspect-[16/9] min-[900px]:aspect-[21/9]">
+          <div className="relative w-full aspect-[3/4] min-[900px]:aspect-[21/9]">
             <Image
               src="/cade-kitchen-hero.jpg"
               alt="Cade Barone"
               fill
               sizes="100vw"
-              className="object-cover object-center"
+              className="object-cover object-[center_10%] min-[900px]:scale-x-[-1]"
               priority
             />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(22,32,47,0.75),rgba(22,32,47,0.15))]" />
+            {/* Mobile: photo shown near-native, text sits at the bottom over a rising gradient */}
+            <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(22,32,47,0.85),rgba(22,32,47,0)_55%)] min-[900px]:hidden" />
+            {/* Desktop: photo flipped so Cade reads on the right, text sits on the left */}
+            <div className="hidden min-[900px]:block absolute inset-0 bg-[linear-gradient(90deg,rgba(22,32,47,0.8),rgba(22,32,47,0.1)_60%)]" />
           </div>
-          <div className="absolute inset-0 flex items-center">
+          <div className="absolute inset-0 flex items-end min-[900px]:items-center pb-10 min-[900px]:pb-0">
             <div className="max-w-[1280px] w-full mx-auto px-[clamp(20px,5vw,56px)]">
               <FadeUp>
-                <h1 className="m-0 font-display font-medium text-[clamp(48px,9vw,120px)] leading-[0.98] tracking-[0.01em] text-cream">
+                <h1 className="m-0 font-display font-medium text-[clamp(40px,9vw,120px)] leading-[0.98] tracking-[0.01em] text-cream">
                   CADE
                   <br />
                   BARONE
