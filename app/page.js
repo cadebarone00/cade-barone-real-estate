@@ -9,20 +9,18 @@ export const metadata = {
     "Cade Barone — Dallas real estate agent with Crown Homes Real Estate. Find a property, see why clients work with him, and get in touch.",
 };
 
-// TODO: replace with your own copy once you send it over
 const REASONS_TO = [
-  "Placeholder — reason 1 you should work with me.",
-  "Placeholder — reason 2 you should work with me.",
-  "Placeholder — reason 3 you should work with me.",
-  "Placeholder — reason 4 you should work with me.",
-  "Placeholder — reason 5 you should work with me.",
+  "I am a relentless advocate for my clients who strives to let nothing fall through the cracks. My goal is to protect your investment from start to finish.",
+  "I am hands-on through every step of the process, including negotiation, due diligence, and contingencies, building a strategy fitting to your situation that helps you win.",
+  "I treat every deal with the same intent, regardless of size or difficulty; A resource in any situation, making sure you get the most for your time and money.",
+  "I stay prepared and informed, sharpened by experiences and a growing team behind me.",
+  "I lead with my core values and put them to work for your benefit, not my own.",
 ];
 
-// TODO: replace with your own copy once you send it over
 const REASONS_NOT_TO = [
-  "Placeholder — reason 1 you shouldn't work with me.",
-  "Placeholder — reason 2 you shouldn't work with me.",
-  "Placeholder — reason 3 you shouldn't work with me.",
+  "You want an agent who's laid back throughout the transaction. I like to communicate extensively throughout the process and stay available for you, including after hours.",
+  "You want someone who just gets a deal signed without digging into the details, Instead, I negotiate hard and protect you through tailored strategies.",
+  "You want an agent who tells you what you want to hear. I value honesty over false comfort, and I won't agree with everything just to get you to the closing table.",
 ];
 
 // TODO: swap for your real Crown Homes IDX link
@@ -87,7 +85,7 @@ export default function HomePage() {
           <div className="max-w-[760px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)]">
             <FadeUp>
               <h2 className="m-0 mb-7 font-display font-medium text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
-                Why you should work with me
+                Why should you hire me
               </h2>
               <div className="flex flex-col gap-4 mb-16">
                 {REASONS_TO.map((reason, i) => (
@@ -100,7 +98,7 @@ export default function HomePage() {
 
             <FadeUp>
               <h2 className="m-0 mb-7 font-display font-medium text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
-                Why you shouldn&apos;t work with me
+                Why you should NOT hire me
               </h2>
               <div className="flex flex-col gap-4">
                 {REASONS_NOT_TO.map((reason, i) => (
