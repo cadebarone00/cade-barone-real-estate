@@ -1,11 +1,6 @@
-"use client";
-
 import Link from "next/link";
-import { useContactModal } from "@/components/ContactModal";
 
 export default function Footer() {
-  const { open } = useContactModal();
-
   return (
     <footer className="bg-footer-bg text-footer-text">
       <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] pt-[72px] pb-10 grid grid-cols-1 min-[640px]:grid-cols-[1.4fr_1fr_1fr] gap-12">
@@ -18,12 +13,12 @@ export default function Footer() {
             strategic, and genuinely in your corner from the first call to
             the keys.
           </p>
-          <button
-            onClick={open}
-            className="font-bold text-sm tracking-[0.05em] text-ink bg-gold rounded-md px-6 py-3 cursor-pointer transition-colors duration-150 hover:bg-gold-hover"
+          <Link
+            href="/contact"
+            className="inline-block font-bold text-sm tracking-[0.05em] text-ink bg-gold rounded-md px-6 py-3 no-underline transition-colors duration-150 hover:bg-gold-hover"
           >
             Let&apos;s Talk
-          </button>
+          </Link>
         </div>
 
         <div>
@@ -32,23 +27,17 @@ export default function Footer() {
           </div>
           <div className="flex flex-col gap-3 text-[15px]">
             <Link href="/" className="text-footer-text no-underline hover:text-cream">
-              Home
-            </Link>
-            <Link href="/about" className="text-footer-text no-underline hover:text-cream">
               About
             </Link>
             <Link href="/services" className="text-footer-text no-underline hover:text-cream">
               Services
             </Link>
-            <Link href="/journal" className="text-footer-text no-underline hover:text-cream">
-              Journal
+            <Link href="/listings" className="text-footer-text no-underline hover:text-cream">
+              Listings
             </Link>
-            <button
-              onClick={open}
-              className="text-left text-footer-text bg-transparent border-0 p-0 cursor-pointer hover:text-cream"
-            >
+            <Link href="/contact" className="text-footer-text no-underline hover:text-cream">
               Contact
-            </button>
+            </Link>
           </div>
         </div>
 
@@ -69,7 +58,12 @@ export default function Footer() {
             >
               (210) 665-2779
             </a>
-            <span className="text-footer-muted">Dallas, Texas</span>
+            {/* TODO: add office zip code and office phone number once provided */}
+            <span className="text-footer-muted">
+              Crown Homes Real Estate
+              <br />
+              500 N Central Expwy, Plano, TX
+            </span>
             <div className="flex gap-2.5 mt-2">
               <a
                 href="#"
