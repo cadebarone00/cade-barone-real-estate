@@ -43,8 +43,8 @@ export default function RentingPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · RENTING
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                RENTING <em className="italic">made</em> SIMPLE
+              <h1 className="m-0 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                RENTING made SIMPLE
               </h1>
             </FadeUp>
           </div>

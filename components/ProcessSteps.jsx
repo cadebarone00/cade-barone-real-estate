@@ -12,7 +12,7 @@ export default function ProcessSteps({ steps }) {
             {step.n}
           </div>
           <div>
-            <h3 className="m-0 mb-2.5 font-display italic font-medium text-2xl text-navy">
+            <h3 className="m-0 mb-2.5 font-display font-medium tracking-[0.05em] text-2xl text-navy">
               {step.title}
             </h3>
             <p className="m-0 text-base leading-[1.7] text-grey-text max-w-[540px]">

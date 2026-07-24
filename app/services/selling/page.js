@@ -42,8 +42,8 @@ export default function SellingPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · SELLING
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                SELLING <em className="italic">with</em> STRATEGY
+              <h1 className="m-0 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                SELLING with STRATEGY
               </h1>
             </FadeUp>
           </div>

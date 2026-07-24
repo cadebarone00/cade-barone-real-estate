@@ -46,8 +46,8 @@ export default function ContactPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · CONTACT
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                LET&apos;S <em className="italic">talk</em>
+              <h1 className="m-0 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                LET&apos;S TALK
               </h1>
             </FadeUp>
           </div>
@@ -58,7 +58,7 @@ export default function ContactPage() {
             {status === "success" ? (
               <FadeUp>
                 <div className="text-center py-10">
-                  <h2 className="font-display font-medium text-[clamp(28px,3vw,38px)] text-ink mb-3">
+                  <h2 className="font-display font-medium tracking-[0.05em] text-[clamp(28px,3vw,38px)] text-ink mb-3">
                     Thank you — talk soon.
                   </h2>
                   <p className="text-grey-text text-lg">

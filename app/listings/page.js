@@ -29,8 +29,8 @@ export default function ListingsPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · LISTINGS
               </div>
-              <h1 className="m-0 mb-5 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                CROWN HOMES <em className="italic">Texas</em> LISTINGS
+              <h1 className="m-0 mb-5 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                CROWN HOMES Texas LISTINGS
               </h1>
               <a
                 href={IDX_URL}
@@ -47,7 +47,7 @@ export default function ListingsPage() {
         <section className="bg-cream">
           <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(56px,7vw,96px)]">
             <FadeUp>
-              <h2 className="m-0 mb-6 font-display font-medium text-[clamp(26px,3vw,36px)] leading-[1.15] text-ink">
+              <h2 className="m-0 mb-6 font-display font-medium tracking-[0.05em] text-[clamp(26px,3vw,36px)] leading-[1.15] text-ink">
                 My Listings
               </h2>
               <p className="m-0 text-lg leading-[1.7] text-grey-text">
@@ -60,7 +60,7 @@ export default function ListingsPage() {
         <section className="bg-cream-deep">
           <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(56px,7vw,96px)]">
             <FadeUp>
-              <h2 className="m-0 mb-8 font-display font-medium text-[clamp(26px,3vw,36px)] leading-[1.15] text-ink">
+              <h2 className="m-0 mb-8 font-display font-medium tracking-[0.05em] text-[clamp(26px,3vw,36px)] leading-[1.15] text-ink">
                 Agent Listings
               </h2>
             </FadeUp>

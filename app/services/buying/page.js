@@ -42,8 +42,8 @@ export default function BuyingPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · BUYING
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                BUYING <em className="italic">with</em> CONFIDENCE
+              <h1 className="m-0 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                BUYING with CONFIDENCE
               </h1>
             </FadeUp>
           </div>

@@ -45,8 +45,8 @@ export default function ServicesPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · SERVICES
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                HOW I <em className="italic">can</em> HELP
+              <h1 className="m-0 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                HOW I can HELP
               </h1>
             </FadeUp>
           </div>
@@ -61,7 +61,7 @@ export default function ServicesPage() {
                     href={cat.href}
                     className="block h-full bg-white rounded-[10px] border border-border-subtle px-8 py-9 no-underline transition-colors duration-150 hover:border-gold/60"
                   >
-                    <h2 className="m-0 mb-2.5 font-display italic font-medium text-2xl text-navy">
+                    <h2 className="m-0 mb-2.5 font-display font-medium tracking-[0.05em] text-2xl text-navy">
                       {cat.label}
                     </h2>
                     <p className="m-0 text-base leading-[1.7] text-grey-text">

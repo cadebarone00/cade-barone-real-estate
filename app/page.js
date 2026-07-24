@@ -56,7 +56,7 @@ export default function HomePage() {
                 </div>
               </FadeUp>
               <FadeUp delay={0.08}>
-                <h1 className="m-0 mb-3 font-display font-medium text-[clamp(40px,7vw,100px)] leading-[0.98] tracking-[0.01em] text-cream">
+                <h1 className="m-0 mb-3 font-display font-medium text-[clamp(40px,7vw,100px)] leading-[0.98] tracking-[0.08em] text-cream">
                   CADE
                   <br />
                   BARONE
@@ -75,7 +75,7 @@ export default function HomePage() {
         <section className="bg-navy">
           <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(28px,4vw,44px)] flex flex-col min-[640px]:flex-row items-center justify-between gap-6 text-center min-[640px]:text-left">
             <FadeUp>
-              <h2 className="m-0 mb-1 font-display font-medium text-[clamp(22px,2.4vw,30px)] leading-[1.15] text-cream">
+              <h2 className="m-0 mb-1 font-display font-medium tracking-[0.05em] text-[clamp(22px,2.4vw,30px)] leading-[1.15] text-cream">
                 Want to find a property?
               </h2>
               <p className="m-0 text-sm text-pale-blue">
@@ -99,7 +99,7 @@ export default function HomePage() {
         <section className="bg-white">
           <div className="max-w-[760px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(64px,8vw,112px)]">
             <FadeUp>
-              <h2 className="m-0 mb-4 min-[900px]:mb-7 font-display font-medium text-xl min-[900px]:text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
+              <h2 className="m-0 mb-4 min-[900px]:mb-7 font-display font-medium tracking-[0.05em] text-xl min-[900px]:text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
                 Why should you hire me
               </h2>
               <div className="flex flex-col gap-2.5 min-[900px]:gap-4 mb-10 min-[900px]:mb-16">
@@ -112,7 +112,7 @@ export default function HomePage() {
             </FadeUp>
 
             <FadeUp>
-              <h2 className="m-0 mb-4 min-[900px]:mb-7 font-display font-medium text-xl min-[900px]:text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
+              <h2 className="m-0 mb-4 min-[900px]:mb-7 font-display font-medium tracking-[0.05em] text-xl min-[900px]:text-[clamp(28px,3.4vw,40px)] leading-[1.15] text-ink">
                 Why you should NOT hire me
               </h2>
               <div className="flex flex-col gap-2.5 min-[900px]:gap-4">

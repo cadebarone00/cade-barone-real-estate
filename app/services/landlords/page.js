@@ -43,8 +43,8 @@ export default function LandlordsPage() {
               <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
                 DALLAS REAL ESTATE · LANDLORDS
               </div>
-              <h1 className="m-0 font-display font-medium text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                SUPPORT <em className="italic">for</em> LANDLORDS
+              <h1 className="m-0 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
+                SUPPORT for LANDLORDS
               </h1>
             </FadeUp>
           </div>
