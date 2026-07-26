@@ -8,9 +8,6 @@ export const metadata = {
   description: "Active Crown Homes Texas listings with Cade Barone in Dallas, TX.",
 };
 
-// TODO: swap for your real Crown Homes IDX link
-const IDX_URL = "#idx-link-tbd";
-
 // TODO: replace with real agent listings once available
 const AGENT_LISTINGS = [
   { id: 1, label: "Listing photo" },
@@ -23,29 +20,8 @@ export default function ListingsPage() {
     <>
       <Nav />
       <main>
-        <section className="bg-navy">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(28px,3.5vw,44px)] text-center">
-            <FadeUp>
-              <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-[10px]">
-                DALLAS REAL ESTATE · LISTINGS
-              </div>
-              <h1 className="m-0 mb-5 font-display font-medium tracking-[0.05em] text-[clamp(36px,4.8vw,58px)] leading-[1.04] text-cream">
-                CROWN HOMES Texas LISTINGS
-              </h1>
-              <a
-                href={IDX_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block font-bold text-base tracking-[0.05em] text-ink bg-gold rounded-[7px] px-[38px] py-4 no-underline transition-colors duration-150 hover:bg-gold-hover"
-              >
-                Want to see all the listings in your area?
-              </a>
-            </FadeUp>
-          </div>
-        </section>
-
         <section className="bg-cream">
-          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] py-[clamp(56px,7vw,96px)]">
+          <div className="max-w-[1280px] mx-auto px-[clamp(20px,5vw,56px)] pt-[clamp(16px,2vw,28px)] pb-[clamp(56px,7vw,96px)]">
             <FadeUp>
               <h2 className="m-0 mb-6 font-display font-medium tracking-[0.05em] text-[clamp(26px,3vw,36px)] leading-[1.15] text-ink">
                 My Listings

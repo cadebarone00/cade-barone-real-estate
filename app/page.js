@@ -3,7 +3,6 @@ import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeUp from "@/components/FadeUp";
-import ImagePlaceholder from "@/components/ImagePlaceholder";
 
 export const metadata = {
   title: "About",
@@ -52,9 +51,7 @@ const REASONS_NOT_TO = [
 export default function HomePage() {
   return (
     <>
-      <div className="min-[900px]:hidden">
-        <Nav />
-      </div>
+      <Nav />
 
       <main>
         {/* HERO — mobile: full-bleed photo, text card at bottom */}
@@ -95,33 +92,7 @@ export default function HomePage() {
 
         {/* HERO — desktop: split panel, photo right, text + boxed links left */}
         <section className="hidden min-[900px]:block bg-cream">
-          <div className="max-w-[1400px] mx-auto px-[clamp(24px,3vw,40px)] pt-[clamp(20px,2.4vw,32px)] pb-0">
-            {/* Top bar: logo + plain text nav */}
-            <div className="flex items-center justify-between pb-8">
-              {/* TODO: swap for the real Crown Homes logo file */}
-              <ImagePlaceholder label="Crown Homes Logo" className="h-10 w-[160px]" />
-              <nav className="flex items-center gap-10">
-                <Link
-                  href="/"
-                  className="relative text-sm font-semibold tracking-[0.14em] text-ink no-underline after:content-[''] after:absolute after:left-0 after:-bottom-0.5 after:w-full after:h-[2px] after:bg-gold"
-                >
-                  HOME
-                </Link>
-                <Link
-                  href="/services"
-                  className="text-sm font-semibold tracking-[0.14em] text-grey-text no-underline hover:text-ink"
-                >
-                  SERVICES
-                </Link>
-                <Link
-                  href="/listings"
-                  className="text-sm font-semibold tracking-[0.14em] text-grey-text no-underline hover:text-ink"
-                >
-                  LISTINGS
-                </Link>
-              </nav>
-            </div>
-
+          <div className="max-w-[1400px] mx-auto px-[clamp(24px,3vw,40px)] pt-[clamp(16px,2vw,28px)] pb-0">
             <div className="grid grid-cols-2 gap-[clamp(32px,4vw,64px)] items-stretch">
               <div className="flex flex-col items-center text-center justify-start pt-[clamp(32px,6vw,72px)] px-6">
                 <FadeUp>
