@@ -42,7 +42,7 @@ export default function Nav() {
   return (
     <>
       <header className="sticky top-0 z-50 bg-cream/[0.92] backdrop-blur-md border-b border-border-subtle">
-        <div className="max-w-[1280px] mx-auto flex items-center justify-between gap-6 px-[clamp(20px,5vw,56px)] py-[18px]">
+        <div className="max-w-[1280px] mx-auto flex items-center justify-between md:justify-start gap-6 md:gap-[clamp(28px,4vw,56px)] px-[clamp(20px,5vw,56px)] py-[18px]">
           <Link
             href="/"
             className="font-display font-medium text-[23px] tracking-[0.13em] text-ink no-underline whitespace-nowrap"

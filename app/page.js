@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import FadeUp from "@/components/FadeUp";
@@ -32,24 +33,21 @@ export default function HomePage() {
       <Nav />
 
       <main>
-        {/* HERO */}
-        <section className="relative bg-navy overflow-hidden">
-          <div className="relative w-full aspect-[3/4] min-[900px]:aspect-[16/7]">
+        {/* HERO — mobile: full-bleed photo, text card at bottom */}
+        <section className="relative bg-navy overflow-hidden min-[900px]:hidden">
+          <div className="relative w-full aspect-[3/4]">
             <Image
               src="/cade-kitchen-hero.jpg"
               alt="Cade Barone"
               fill
               sizes="100vw"
-              className="object-cover object-[center_10%] min-[900px]:-scale-x-100"
+              className="object-cover object-[center_10%]"
               priority
             />
-            {/* Mobile: photo shown near-native, text sits at the bottom over a rising gradient */}
-            <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(22,32,47,0.85),rgba(22,32,47,0)_55%)] min-[900px]:hidden" />
-            {/* Desktop: photo flipped so Cade reads on the right, text sits directly on the left over a gradient */}
-            <div className="hidden min-[900px]:block absolute inset-0 bg-[linear-gradient(90deg,rgba(22,32,47,0.82),rgba(22,32,47,0.05)_58%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(22,32,47,0.85),rgba(22,32,47,0)_55%)]" />
           </div>
-          <div className="absolute inset-0 flex items-end min-[900px]:items-center pb-10 min-[900px]:pb-0">
-            <div className="max-w-[1280px] w-full mx-auto px-[clamp(20px,5vw,56px)]">
+          <div className="absolute inset-0 flex items-end pb-10">
+            <div className="w-full px-[clamp(20px,5vw,56px)]">
               <FadeUp>
                 <div className="text-xs font-semibold tracking-[0.2em] text-gold mb-3">
                   DALLAS REAL ESTATE
@@ -67,6 +65,60 @@ export default function HomePage() {
                   CROWN HOMES REAL ESTATE · NORTH DALLAS &amp; COLLIN COUNTY
                 </div>
               </FadeUp>
+            </div>
+          </div>
+        </section>
+
+        {/* HERO — desktop: split panel, photo right, text + boxed links left */}
+        <section className="hidden min-[900px]:block bg-cream">
+          <div className="max-w-[1400px] mx-auto px-[clamp(24px,3vw,40px)] pt-[clamp(24px,3vw,40px)] pb-0">
+            <div className="grid grid-cols-2 gap-[clamp(32px,4vw,64px)] items-stretch">
+              <div className="flex flex-col justify-center py-12">
+                <FadeUp>
+                  <div className="text-xs font-semibold tracking-[0.2em] text-grey-text leading-[1.6] mb-8">
+                    DALLAS REAL ESTATE
+                    <br />
+                    CROWN HOMES REAL ESTATE
+                  </div>
+                </FadeUp>
+                <FadeUp delay={0.08}>
+                  <h1 className="m-0 mb-9 font-display font-medium tracking-[0.02em] text-[clamp(48px,5.6vw,84px)] leading-[1.02] text-ink">
+                    CADE
+                    <br />
+                    BARONE
+                  </h1>
+                </FadeUp>
+                <FadeUp delay={0.14}>
+                  <div className="h-px bg-border-subtle max-w-[420px] mb-9" />
+                </FadeUp>
+                <FadeUp delay={0.2}>
+                  <div className="flex flex-wrap gap-4">
+                    <Link
+                      href="/services/buying"
+                      className="border border-ink/35 rounded-[6px] px-6 py-3.5 text-xs font-semibold tracking-[0.12em] text-ink no-underline transition-colors duration-150 hover:border-ink hover:bg-ink/5"
+                    >
+                      BUY A HOME &gt;
+                    </Link>
+                    <Link
+                      href="/services/selling"
+                      className="border border-ink/35 rounded-[6px] px-6 py-3.5 text-xs font-semibold tracking-[0.12em] text-ink no-underline transition-colors duration-150 hover:border-ink hover:bg-ink/5"
+                    >
+                      SELL YOUR HOME &gt;
+                    </Link>
+                  </div>
+                </FadeUp>
+              </div>
+
+              <div className="relative min-h-[560px] rounded-t-[16px] overflow-hidden">
+                <Image
+                  src="/cade-kitchen-hero.jpg"
+                  alt="Cade Barone"
+                  fill
+                  sizes="50vw"
+                  className="object-cover object-[center_10%]"
+                  priority
+                />
+              </div>
             </div>
           </div>
         </section>
