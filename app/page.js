@@ -30,7 +30,9 @@ const IDX_URL = "#idx-link-tbd";
 export default function HomePage() {
   return (
     <>
-      <Nav />
+      <div className="min-[900px]:hidden">
+        <Nav />
+      </div>
 
       <main>
         {/* HERO — mobile: full-bleed photo, text card at bottom */}
@@ -73,26 +75,29 @@ export default function HomePage() {
         <section className="hidden min-[900px]:block bg-cream">
           <div className="max-w-[1400px] mx-auto px-[clamp(24px,3vw,40px)] pt-[clamp(24px,3vw,40px)] pb-0">
             <div className="grid grid-cols-2 gap-[clamp(32px,4vw,64px)] items-stretch">
-              <div className="flex flex-col justify-center py-12">
+              <div className="flex flex-col items-center text-center justify-start pt-[clamp(48px,8vw,96px)] px-6">
                 <FadeUp>
-                  <div className="text-xs font-semibold tracking-[0.2em] text-grey-text leading-[1.6] mb-8">
-                    DALLAS REAL ESTATE
-                    <br />
+                  <div className="font-display font-medium tracking-[0.04em] text-xl text-ink mb-1">
+                    Cade Barone, Realtor
+                  </div>
+                </FadeUp>
+                <FadeUp delay={0.05}>
+                  <div className="text-xs font-semibold tracking-[0.18em] text-grey-text mb-10">
                     CROWN HOMES REAL ESTATE
                   </div>
                 </FadeUp>
-                <FadeUp delay={0.08}>
-                  <h1 className="m-0 mb-9 font-display font-medium tracking-[0.02em] text-[clamp(48px,5.6vw,84px)] leading-[1.02] text-ink">
-                    CADE
-                    <br />
-                    BARONE
+                <FadeUp delay={0.1}>
+                  <h1 className="m-0 mb-9 font-display font-medium text-[clamp(40px,4.6vw,68px)] leading-[1.1] text-ink max-w-[480px]">
+                    Let&apos;s find your <em className="italic">dream home</em>.
                   </h1>
                 </FadeUp>
-                <FadeUp delay={0.14}>
-                  <div className="h-px bg-border-subtle max-w-[420px] mb-9" />
+                <FadeUp delay={0.16}>
+                  <div className="text-xs font-semibold tracking-[0.18em] text-grey-text mb-10">
+                    FRISCO&nbsp;&nbsp;|&nbsp;&nbsp;MCKINNEY&nbsp;&nbsp;|&nbsp;&nbsp;ALLEN
+                  </div>
                 </FadeUp>
-                <FadeUp delay={0.2}>
-                  <div className="flex flex-wrap gap-4">
+                <FadeUp delay={0.22}>
+                  <div className="flex flex-wrap justify-center gap-4">
                     <Link
                       href="/services/buying"
                       className="border border-ink/35 rounded-[6px] px-6 py-3.5 text-xs font-semibold tracking-[0.12em] text-ink no-underline transition-colors duration-150 hover:border-ink hover:bg-ink/5"
